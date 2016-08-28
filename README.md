@@ -13,7 +13,7 @@ For each of the questions below, answer as if you were in an interview, explaini
 ## Question 2 - You want to open a map app from an app that you’re building. The address, city, state, and ZIP code are provided by the user. What steps are involved in sending that data to a map app?
 
 1. Get the full address from the user.
-2. Then I will build a uri to pass it to the maps app 
+2. Then I will build a uri to pass it to the maps app.<br>
   String uri =  geo:0,0?q=my+street+address;
 3. Then use the uri to create a Intent and Launch the maps activity
 ```java
@@ -74,13 +74,13 @@ System.out.println(compress("aaaaaaabbbbba"));
 
 ## Question 4 - List and explain the differences between four different options you have for saving data while making an Android app. Pick one, and explain (without code) how you would implement it.
 > Options to store data: 1. Shared preferences 2. SQLite database 3. Files 4. External storage / Online / APIs;
-	Shared Preferences are the easiest way for persistent data storage. It is based on key-value pair storage. Data remains on device even after reboots and is removed if data is cleared by user from the settings or the app is uninstalled.
+	Shared Preferences are the easiest way for persistent data storage. It is based on key-value pair storage. Data remains on device even after reboots and is removed if data is cleared by user from the settings or the app is uninstalled.<br>
 	
 > To write values:
-    1. Call edit() to get a SharedPreferences.Editor.
-    2. Add values with methods such as putBoolean() and putString().
-    3. Commit the new values with commit().
-  But this method is not so effective for large datasets.
+    1. Call edit() to get a SharedPreferences.Editor.<br>
+    2. Add values with methods such as putBoolean() and putString().<br>
+    3. Commit the new values with commit().<br>
+  But this method is not so effective for large datasets.<br>
   
 ## Question 5 - Given a directed graph, design an algorithm to find out whether there is a route between two nodes. The method signature is: “public static < T > boolean findPath(GraphNode< T > start, GraphNode< T > end)”. Assume you have a “GraphNode” class that has a getChildren() method, which returns a List< GraphNode< T >> object. You must write all code in proper Java, and please include import statements for any libraries you use (no need to import GraphNode).
 
