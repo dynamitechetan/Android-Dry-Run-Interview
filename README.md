@@ -90,5 +90,5 @@ I am in favour of using Fragments as they provide various advantages and helps i
 In the case of tablets, we can use a single activity and attach two fragments to it, one for showing the list and the other for the detail.
 
 ## Q6: If you were to start your Android position today, what would be your goals a year from now? 
-> By next year, I want to see myself leading a team or android developers, building something cool.
+> By next year, I want to see myself leading a team or android developers, building something cool.<br>
   I also have plans to contibute more towards open source software and help the Android community make great products.
