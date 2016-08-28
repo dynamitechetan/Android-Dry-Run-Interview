@@ -82,90 +82,12 @@ System.out.println(compress("aaaaaaabbbbba"));
     3. Commit the new values with commit().<br>
   But this method is not so effective for large datasets.<br>
   
-## Question 5 - Given a directed graph, design an algorithm to find out whether there is a route between two nodes. The method signature is: “public static < T > boolean findPath(GraphNode< T > start, GraphNode< T > end)”. Assume you have a “GraphNode” class that has a getChildren() method, which returns a List< GraphNode< T >> object. You must write all code in proper Java, and please include import statements for any libraries you use (no need to import GraphNode).
 
-```java
-class Graph { private int V; 
-
-Graph(int v)
-{
-    V = v;
-    adj = new LinkedList[v];
-    for (int i=0; i<v; ++i)
-        adj[i] = new LinkedList();
-}
-
-void addEdge(int v,int w)  {   adj[v].add(w);   }
-
-Boolean isReachable(int s, int d)
-{
-    LinkedList<Integer>temp;
-
-   
-    boolean visited[] = new boolean[V];
-
-    LinkedList<Integer> queue = new LinkedList<Integer>();
-
-    visited[s]=true;
-    queue.add(s);
-
-    Iterator<Integer> i;
-    while (queue.size()!=0)
-    {
-        s = queue.poll();
-
-        int n;
-        i = adj[s].listIterator();
-        while (i.hasNext())
-        {
-            n = i.next();
-            if (n==d)
-                return true;
-
-            if (!visited[n])
-            {
-                visited[n] = true;
-                queue.add(n);
-            }
-        }
-    }
-
-    
-    return false;
-}
-
-
-public static void main(String args[])
-{
-    Graph g = new Graph(4);
-    g.addEdge(0, 1);
-    g.addEdge(0, 2);
-    g.addEdge(1, 2);
-    g.addEdge(2, 0);
-    g.addEdge(2, 3);
-    g.addEdge(3, 3);
-
-    int u = 1;
-    int v = 3;
-    if (g.isReachable(u, v))
-        System.out.println("There is a path from " + u +" to " + v);
-    else
-        System.out.println("There is no path from " + u +" to " + v);;
-
-    u = 3;
-    v = 1;
-    if (g.isReachable(u, v))
-        System.out.println("There is a path from " + u +" to " + v);
-    else
-        System.out.println("There is no path from " + u +" to " + v);;
-}
-
-}
-```
-
-## Question 6 - What are your thoughts about Fragments? Do you like or hate them? Why?
+## Question 5 - What are your thoughts about Fragments? Do you like or hate them? Why?
 > Fragments are a powerful feature of the Android platform and are slightly complex.
 The main reason to use Fragments are for the backstack and lifecycle features. It makes it easy to reuse our views.
 I am in favour of using Fragments as they provide various advantages and helps in making great UI/UX/
 In the case of tablets, we can use a single activity and attach two fragments to it, one for showing the list and the other for the detail.
 
+## Q6: If you were to start your Android position today, what would be your goals a year from now? 
+> By next year, I want to see myself leading a team or android developers, building something great.
